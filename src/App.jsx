@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Nav from './component/Nav';
-import Accueil from './component/Accueil';
+import Cards from './component/Cards';
 import Details from './component/Details';
 import axios from 'axios';
 
@@ -12,10 +12,10 @@ const App =() => {
   return (
  
    <Router>
-   <Accueil/>
+   {/* <Accueil/> */}
             <Routes>  
        <Route path='/' element={<Nav/>}/>
-       <Route path='/accueil' element={<Accueil/>}/>
+       <Route path='/cards' element={<Cards/>}/>
        <Route path='/details' element={<Details/>}/>
 
       </Routes>

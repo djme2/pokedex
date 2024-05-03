@@ -3,7 +3,7 @@ import { Link,BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios'
 import Nav from './Nav';
 
-const Accueil = ()  =>{
+const Cards = ()  =>{
     const [pokemons, setPokemons] = useState([]);
   
 useEffect ( () => {
@@ -13,18 +13,16 @@ useEffect ( () => {
 
    
   })
-})
+},[])
   return (
     <div>
         <h1>liste des pokemons</h1>
         <div className='row row-cols-1 row_cols-md 3 g-2'>
             {pokemons.map((pokemon, index) =>(
                 <div key={pokemon.id}>{ pokemon.name}</div>
-
-            )
-        )}
+ ))}
     </div></div>
   )
 };
 
-export default Accueil;
+export default Cards;
