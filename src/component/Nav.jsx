@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -6,22 +6,27 @@ const Nav = () => {
 
  
   return (
-    <nav className="navbar navbar-expand-lg bg-yellow w-100 mx-auto" data-bs-theme="yellow"  >
+ 
+    <nav className="navbar  navbar-expand-lg bg-primary w-100 mx-auto" data-bs-theme=""  >
     <div className="container-fluid"  >
-      <a className="navbar-brand" href="#"    > Pokedex  </a>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarColor02" aria-controls="navbarColor02"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <nav>
-      <Link to="/accueil">Accueil</Link>
-      <Link to="/details">Details</Link>
-      </nav>
-</div>
-</nav>
-
-  
+      <a className="navbar-brand" href="#"    >POKEDEX </a>
+      
+      <div className="collapse navbar-collapse" id="navbarColor02">
+        <ul className="navbar-nav me-auto">
+        </ul>
+        
+        <form className="d-flex">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          
+          <nav>
+    <Link to="/accueil">Accueil</Link>
+    <Link to="/details">Details</Link>
+    </nav>
+             
+           </form>  
+           </div>
+         </div>
+       </nav>
   )
 };
 
