@@ -15,7 +15,7 @@ const Nav = () => {
           <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
           
           <nav>
-    <Link to="/accueil">Accueil</Link>
+
     <Link to="/details">Details</Link>
     </nav>
              
