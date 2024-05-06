@@ -19,9 +19,19 @@ useEffect ( () => {
         <h1>liste des pokemons</h1>
         <div className='row row-cols-1 row_cols-md 3 g-2'>
             {pokemons.map((pokemon, index) =>(
-                <div key={pokemon.id}>{ pokemon.name}</div>
- ))}
-    </div></div>
+              <div className="col">
+              <div className="cards">
+
+              <img src={pokemon.image} className="card-img-top" alt='images' />
+              <div className='cards-body' key={index}>
+                <div key={pokemon.id}>{ pokemon.name}
+             </div >  </div> </div> </div>
+ ))
+ }
+
+   
+   
+    </div> </div>
   )
 };
 

@@ -9,7 +9,7 @@ body{
   .navbar{
     top: 0;
   }
-  /* .Cards {
+  .cards {
     width: 300px;
     background-color: #9EDEF9;
     border-radius: 1rem;
@@ -19,4 +19,4 @@ body{
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-  } */
+  }
