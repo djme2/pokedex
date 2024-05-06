@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link,BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios'
 import Nav from './Nav';
 
